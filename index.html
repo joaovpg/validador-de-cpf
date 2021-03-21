@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validador de CPF</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel=stylesheet type="text/css" href="css/reset.css">
+        <link rel=stylesheet type="text/css" href="css/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script type="text/javascript" src="script/script.js"></script>
+    </head>
+    <body>
+        <div class="externo">
+            <div class="interno">
+                <h1 class="texto-centralizado">Informe o CPF</h1>
+                <form>
+                    <input type="text" id="pegarCPF" class="validador" placeholder="XXX.XXX.XXX-XX" maxlength="15">
+                    <button type="button" class="validador" onclick="validaCPF()">Verificar CPF</button>
+                </form>
+                <div id="valido">
+                    <h2 class="texto-centralizado">O CPF é válido</h2>
+                </div>
+                <div id="invalido">
+                    <h2 class="texto-centralizado">O CPF é inválido</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

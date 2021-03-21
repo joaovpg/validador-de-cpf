@@ -1,0 +1,162 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body{
+    background-color: #3B86FA;
+}
+
+@media screen and (max-width: 600px){
+    .interno {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    input {
+        width: calc(100% - 36.4px) !important;
+        border-radius: 5px 5px 0 0 !important;
+
+    }
+    
+    button {
+        width: 100% !important;
+        border-radius: 0 0 5px 5px i !important;
+ 
+    }
+
+}
+
+.externo {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.interno {
+    width: 640px;
+
+}
+
+form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    padding:  0 0 20px 0;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 1.5em;
+}
+.texto-centralizado {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+input {
+    width: 73%;
+    margin: 0;
+    padding: 0;
+    color: #A1A1A1;
+    background-color: #F2F2F2;
+    border-radius: 5px 0 0 5px;
+    outline: 0;
+}
+
+input:focus-visible {
+    background-color: #E6E6E6;
+    transition: 0.5s;
+}
+
+button {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    border-radius: 0 5px 5px 0; 
+    outline: 0;
+}
+
+button:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+@keyframes animaDiv {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+
+}
+
+@keyframes continuaErrado {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(2.5deg);
+    }
+
+    75% {
+        transform: rotate(-2.5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+#valido, #invalido {
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+#valido {
+    background-color: green;
+    display: none;
+    animation: animaDiv 0.5s;
+}
+
+#invalido {
+    background-color: red;
+    display: none;
+    animation: animaDiv 0.5s;
+}
+
+.validador {
+    padding: 1.3em;
+    font-weight: bold;
+    border: none;
+}
