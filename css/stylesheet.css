@@ -98,18 +98,6 @@ button:hover {
         transform: scale(0);
     }
 
-    25% {
-        transform: scale(1.1);
-    }
-
-    50% {
-        transform: scale(0.9);
-    }
-
-    75% {
-        transform: scale(1.1);
-    }
-
     100% {
         transform: scale(1.0);
     }
@@ -143,16 +131,17 @@ button:hover {
     margin: 10px auto;
     border-radius: 5px;
 }
+#valido, #invalido {
+    display: none;
+    animation: animaDiv 0.15s;
+}
+
 #valido {
     background-color: green;
-    display: none;
-    animation: animaDiv 0.5s;
 }
 
 #invalido {
     background-color: red;
-    display: none;
-    animation: animaDiv 0.5s;
 }
 
 .validador {
