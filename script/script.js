@@ -1,3 +1,14 @@
+// Evento para chamar a função apertando enter, não sendo necessário clicar no botão
+
+var input = document.getElementById("pegarCPF");
+var btn = document.getElementById("myBtn");
+
+input.addEventListener('keydown', function (event) {
+    if (event.keyCode !== 13) return;
+        event.preventDefault();
+        btn.click(); 
+});
+
 // Calcula o primeiro dígito depois do traço
 // XXX.XXX.XXX-1X
 function calculaDV1 (noveDigitos){
@@ -67,4 +78,3 @@ function validaCPF(){
         return cpfInvalido;
     }
 }
-
